@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junk Bros Trash Removal | Crawford County, PA</title>
+    <title>Junk Bros Trash Removal | Crawford County PA</title>
     <meta name="description" content="Fast, affordable junk removal by two local guys in Crawford County, PA. Free quotes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), 
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
                         url('images/Junk Bros Background.jpg') center/cover no-repeat;
         }
         
@@ -167,7 +171,7 @@
         </div>
     </section>
 
-    <!-- Contact Section - Working Form Sending to junkbrostrash@gmail.com -->
+    <!-- Contact Section -->
     <section id="contact" class="py-24 bg-zinc-900">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-4">Get Your Free Quote</h2>
@@ -195,22 +199,21 @@
                     </div>
                 </div>
 
-                <!-- Working Form with Success Message -->
+                <!-- Working Form -->
                 <form id="quote-form" action="https://formspree.io/f/mqakjzoa" method="POST" class="space-y-6 bg-zinc-800 p-8 rounded-3xl">
                     <div class="grid grid-cols-2 gap-4">
-                        <input type="text" name="first-name" placeholder="First Name" required 
+                        <input type="text" name="first-name" placeholder="First Name" required
                                class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
-                        <input type="text" name="last-name" placeholder="Last Name" required 
+                        <input type="text" name="last-name" placeholder="Last Name" required
                                class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
                     </div>
-                    <input type="tel" name="phone" placeholder="Phone Number" required 
+                    <input type="tel" name="phone" placeholder="Phone Number" required
                            class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
-                    <input type="email" name="email" placeholder="Email Address" 
+                    <input type="email" name="email" placeholder="Email Address"
                            class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
-                    <textarea name="message" rows="5" placeholder="Describe the junk or any special details..." 
+                    <textarea name="message" rows="5" placeholder="Describe the junk or any special details..."
                               class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-5 py-4 focus:outline-none focus:border-red-500"></textarea>
-
-                    <button type="submit" 
+                    <button type="submit"
                             class="w-full bg-red-600 hover:bg-red-700 py-5 rounded-3xl font-semibold text-lg transition-all">
                         Send Free Quote Request
                     </button>
@@ -219,11 +222,6 @@
                     <div id="success-message" class="hidden mt-6 p-4 bg-emerald-900 border border-emerald-700 text-emerald-200 rounded-2xl text-center">
                         ✅ Thank you! Your quote request has been sent successfully.<br>
                         We'll get back to you shortly.
-                    </div>
-
-                    <!-- Error Message -->
-                    <div id="error-message" class="hidden mt-6 p-4 bg-red-900 border border-red-700 text-red-200 rounded-2xl text-center">
-                        ❌ Something went wrong. Please try again or call us directly.
                     </div>
                 </form>
             </div>
@@ -254,6 +252,18 @@
                 mobileBtn.textContent = '☰';
             });
         });
+
+        // Simple form success feedback
+        const form = document.getElementById('quote-form');
+        form.addEventListener('submit', function(e) {
+            const successMsg = document.getElementById('success-message');
+            successMsg.classList.remove('hidden');
+            form.reset();
+            
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 8000);
+        });
     </script>
 </body>
-</html>      
+</html>
