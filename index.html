@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junk Bros Trash Removal | Edinboro & Kerrtown PA</title>
-    <meta name="description" content="Fast, affordable, and honest junk removal by two local guys in Edinboro & Kerrtown, PA. Free quotes. Call or text today!">
+    <title>Junk Bros Trash Removal | Crawford County PA</title>
+    <meta name="description" content="Fast, affordable junk removal by two local guys in Crawford County, PA. Free quotes.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), 
+                        url('images/Junk Bros Background.jpg') center/cover no-repeat;
+        }
+        
+        /* Custom Red from your logo */
+        .junk-red {
+            color: #dc2626;
         }
     </style>
 </head>
@@ -17,22 +23,45 @@
 
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-zinc-950 border-b border-zinc-800">
-        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-2xl">🗑️</div>
-                <div>
+        <div class="max-w-6xl mx-auto px-6 py-5">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-red-600 rounded-xl flex items-center justify-center text-2xl">🗑️</div>
                     <span class="text-2xl font-bold tracking-tight">Junk Bros</span>
                 </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex gap-8 text-sm font-medium">
+                    <a href="#about" class="hover:text-red-500 transition-colors">About</a>
+                    <a href="#services" class="hover:text-red-500 transition-colors">Services</a>
+                    <a href="#gallery" class="hover:text-red-500 transition-colors">Gallery</a>
+                    <a href="#testimonials" class="hover:text-red-500 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
+                </div>
+
+                <a href="tel:8148078161" class="hidden md:block bg-red-600 hover:bg-red-700 px-6 py-3 rounded-2xl font-semibold transition-all">
+                    (814) 807-8161
+                </a>
+
+                <!-- Hamburger -->
+                <button id="mobile-menu-btn" class="md:hidden text-3xl focus:outline-none">
+                    ☰
+                </button>
             </div>
-            <div class="hidden md:flex gap-8 text-sm font-medium">
-                <a href="#about" class="hover:text-emerald-400 transition-colors">About Us</a>
-                <a href="#services" class="hover:text-emerald-400 transition-colors">Services</a>
-                <a href="#why" class="hover:text-emerald-400 transition-colors">Why Us</a>
-                <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-6 pt-6 border-t border-zinc-800">
+                <div class="flex flex-col gap-6 text-lg font-medium text-center">
+                    <a href="#about" class="hover:text-red-500">About</a>
+                    <a href="#services" class="hover:text-red-500">Services</a>
+                    <a href="#gallery" class="hover:text-red-500">Gallery</a>
+                    <a href="#testimonials" class="hover:text-red-500">Reviews</a>
+                    <a href="#contact" class="hover:text-red-500">Contact</a>
+                    <a href="tel:8148078161" class="bg-red-600 py-4 rounded-2xl font-semibold">
+                        Call (814) 807-8161
+                    </a>
+                </div>
             </div>
-            <a href="tel:814-123-4567" class="bg-emerald-600 hover:bg-emerald-500 px-6 py-3 rounded-2xl font-semibold transition-all">
-                Call Now (814) 123-4567
-            </a>
         </div>
     </nav>
 
@@ -42,39 +71,34 @@
             <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-6">
                 Local Junk Removal<br>Done Right
             </h1>
-            <p class="text-2xl md:text-3xl text-zinc-300 mb-10 max-w-2xl mx-auto">
+            <p class="text-2xl md:text-3xl text-zinc-300 mb-10">
                 Fast • Affordable • Honest<br>
-                Two local guys who actually show up on time.
+                Two local guys you can actually trust.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xl font-semibold px-10 py-5 rounded-3xl transition-all">
-                    Get Your Free Quote
+                <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white text-xl font-semibold px-10 py-5 rounded-3xl transition-all">
+                    Get Free Quote
                 </a>
-                <a href="tel:814-807-8161" class="border border-white/70 hover:border-white text-xl font-semibold px-10 py-5 rounded-3xl transition-all flex items-center justify-center gap-3">
-                    <i class="fas fa-phone"></i> Call (814) 807-8161
+                <a href="tel:8148078161" class="border border-white/70 hover:border-white text-xl font-semibold px-10 py-5 rounded-3xl transition-all flex items-center gap-3">
+                    <i class="fas fa-phone"></i> (814) 807-8161
                 </a>
             </div>
-            <p class="mt-10 text-zinc-400">Serving Edinboro, Kerrtown & surrounding areas</p>
+            <p class="mt-10 text-zinc-400">Serving Crawford County & surrounding areas</p>
         </div>
     </section>
 
-    <!-- About Us -->
+    <!-- About -->
     <section id="about" class="py-24 bg-zinc-900">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16">Meet the Bros</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <p class="text-lg leading-relaxed mb-6">
-                        We're Nolan and Elijah — two local guys from the Edinboro area who got tired of seeing junk pile up with no good, affordable way to get rid of it.
-                    </p>
-                    <p class="text-lg leading-relaxed">
-                        So we started Junk Bros. No big company nonsense. Just two dependable guys who show up on time, work hard, and treat your property with respect.
-                    </p>
+                <div class="space-y-6 text-lg">
+                    <p>We're Nolan and Elijah — two friends from the Edinboro area who started Junk Bros because we saw a need for honest, reliable junk removal.</p>
+                    <p>No big corporate fees. No showing up late. Just two hardworking local guys who treat every job like it's our own.</p>
                 </div>
-                <div class="bg-zinc-800 p-8 rounded-3xl text-center">
+                <div class="bg-zinc-800 p-10 rounded-3xl text-center">
                     <div class="text-6xl mb-6">👥</div>
-                    <p class="text-xl font-medium">Honest • Fast • Affordable</p>
-                    <p class="text-emerald-400 mt-4">Real local service you can trust</p>
+                    <p class="text-2xl font-medium">Local • Honest • Reliable</p>
                 </div>
             </div>
         </div>
@@ -83,91 +107,153 @@
     <!-- Services -->
     <section id="services" class="py-24">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16">What We Haul</h2>
+            <h2 class="text-4xl font-bold text-center mb-16">What We Remove</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-zinc-900 p-8 rounded-3xl text-center hover:bg-zinc-800 transition-colors">
-                    <div class="text-5xl mb-6">🛋️</div>
-                    <h3 class="text-2xl font-semibold mb-3">Furniture & Appliances</h3>
-                    <p class="text-zinc-400">Couches, beds, refrigerators, washers — you name it.</p>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">
+                    <div class="text-6xl mb-6">🛋️</div>
+                    <h3 class="font-semibold text-xl mb-3">Furniture & Appliances</h3>
+                    <p class="text-zinc-400">Couches, mattresses, refrigerators, washers, dryers, and more.</p>
                 </div>
-                <div class="bg-zinc-900 p-8 rounded-3xl text-center hover:bg-zinc-800 transition-colors">
-                    <div class="text-5xl mb-6">🏗️</div>
-                    <h3 class="text-2xl font-semibold mb-3">Renovation & Construction Debris</h3>
-                    <p class="text-zinc-400">Drywall, lumber, old flooring, shingles.</p>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">
+                    <div class="text-6xl mb-6">🏗️</div>
+                    <h3 class="font-semibold text-xl mb-3">Construction Debris</h3>
+                    <p class="text-zinc-400">Drywall, lumber, shingles, old flooring, renovation waste.</p>
                 </div>
-                <div class="bg-zinc-900 p-8 rounded-3xl text-center hover:bg-zinc-800 transition-colors">
-                    <div class="text-5xl mb-6">🌳</div>
-                    <h3 class="text-2xl font-semibold mb-3">Yard Waste & Misc Junk</h3>
-                    <p class="text-zinc-400">Brush, branches, old sheds, hot tubs, and more.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Us -->
-    <section id="why" class="py-24 bg-zinc-900">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-16">Why Choose Junk Bros?</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div>
-                    <div class="text-emerald-500 text-6xl mb-4">⏰</div>
-                    <h3 class="text-xl font-semibold mb-3">We Show Up On Time</h3>
-                    <p class="text-zinc-400">No waiting around all day wondering when someone will show.</p>
-                </div>
-                <div>
-                    <div class="text-emerald-500 text-6xl mb-4">💰</div>
-                    <h3 class="text-xl font-semibold mb-3">Fair & Transparent Pricing</h3>
-                    <p class="text-zinc-400">We'll give you an honest price upfront — no hidden fees.</p>
-                </div>
-                <div>
-                    <div class="text-emerald-500 text-6xl mb-4">❤️</div>
-                    <h3 class="text-xl font-semibold mb-3">Local Guys Who Care</h3>
-                    <p class="text-zinc-400">We live here. We work hard and treat every job like it's our own property.</p>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">
+                    <div class="text-6xl mb-6">🌳</div>
+                    <h3 class="font-semibold text-xl mb-3">Yard Waste & Misc</h3>
+                    <p class="text-zinc-400">Brush, branches, hot tubs, sheds, tires, and general junk.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact / Quote Form -->
-    <section id="contact" class="py-24">
-        <div class="max-w-2xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-4">Get Your Free Quote Today</h2>
-            <p class="text-center text-zinc-400 mb-12">Fill out the form or just give us a call. We'll respond fast.</p>
-            
-            <form class="space-y-6 bg-zinc-900 p-10 rounded-3xl">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="First Name" class="bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
-                    <input type="text" placeholder="Last Name" class="bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
-                </div>
-                <input type="tel" placeholder="Phone Number" class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
-                <textarea placeholder="Describe the junk (optional but helpful)" rows="4" class="w-full bg-zinc-800 border border-zinc-700 rounded-3xl px-6 py-4 focus:outline-none focus:border-emerald-500"></textarea>
-                
-                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 py-5 rounded-3xl font-semibold text-xl transition-all">
-                    Send Free Quote Request
-                </button>
-            </form>
+    <!-- Photo Gallery -->
+    <section id="gallery" class="py-24 bg-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Recent Work</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="images/junk-bros-dumpster.jpg" alt="Junk Bros truck" class="rounded-2xl aspect-square object-cover hover:scale-105 transition-transform duration-300">
+                <img src="images/junk-bros-before.jpg" alt="Before junk removal" class="rounded-2xl aspect-square object-cover hover:scale-105 transition-transform duration-300">
+                <img src="images/junk-bros-after.jpg" alt="After junk removal" class="rounded-2xl aspect-square object-cover hover:scale-105 transition-transform duration-300">
+                <img src="images/junk-bros-barn-removal-before.jpg" alt="Barn removal before" class="rounded-2xl aspect-square object-cover hover:scale-105 transition-transform duration-300">
+                <img src="images/junk-bros-barn-removal-after.jpg" alt="Barn removal after" class="rounded-2xl aspect-square object-cover hover:scale-105 transition-transform duration-300">
+                <img src="images/junk-bros-trailer.jpg" alt="Junk bros trailer" class="rounded-2xl aspect-square object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+    </section>
 
-            <div class="text-center mt-10">
-                <p class="text-2xl font-medium">Or just call us:</p>
-                <a href="tel:814-123-4567" class="text-4xl font-bold text-emerald-400 hover:text-emerald-300">(814) 123-4567</a>
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <div class="flex gap-1 text-red-500 mb-6">★★★★★</div>
+                    <p class="text-zinc-300 italic mb-6">"Professional, polite, reliable, respectful crew! Could not have had a better experience! Highly recommend."</p>
+                    <p class="font-medium">- Stacey W.</p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <div class="flex gap-1 text-red-500 mb-6">★★★★★</div>
+                    <p class="text-zinc-300 italic mb-6">"This company is amazing! Nolan and his team have been the most professional, on time, affordable Junk removal and movers I have seen in a long time."</p>
+                    <p class="font-medium">- Jim F.</p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <div class="flex gap-1 text-red-500 mb-6">★★★★★</div>
+                    <p class="text-zinc-300 italic mb-6">"Very nice to work with and did a fantastic job! Pricing was great and they stayed in contact from estimate through completion."</p>
+                    <p class="font-medium">- Jill E.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Working Form Sending to junkbrostrash@gmail.com -->
+    <section id="contact" class="py-24 bg-zinc-900">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Get Your Free Quote</h2>
+            <p class="text-center text-zinc-400 mb-12">Call, text, email, or fill out the form below.</p>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-zinc-800 p-8 rounded-3xl">
+                        <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                            <i class="fas fa-phone text-red-500"></i> Call or Text
+                        </h3>
+                        <a href="tel:8148078161" class="text-4xl font-bold text-red-500 hover:text-red-400 block">
+                            (814) 807-8161
+                        </a>
+                    </div>
+
+                    <div class="bg-zinc-800 p-8 rounded-3xl">
+                        <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                            <i class="fas fa-envelope text-red-500"></i> Email
+                        </h3>
+                        <a href="mailto:junkbrostrash@gmail.com" class="text-xl text-red-500 hover:text-red-400">
+                            junkbrostrash@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Working Form with Success Message -->
+                <form id="quote-form" action="https://formspree.io/f/mqakjzoa" method="POST" class="space-y-6 bg-zinc-800 p-8 rounded-3xl">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" name="first-name" placeholder="First Name" required 
+                               class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
+                        <input type="text" name="last-name" placeholder="Last Name" required 
+                               class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone Number" required 
+                           class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
+                    <input type="email" name="email" placeholder="Email Address" 
+                           class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
+                    <textarea name="message" rows="5" placeholder="Describe the junk or any special details..." 
+                              class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-5 py-4 focus:outline-none focus:border-red-500"></textarea>
+
+                    <button type="submit" 
+                            class="w-full bg-red-600 hover:bg-red-700 py-5 rounded-3xl font-semibold text-lg transition-all">
+                        Send Free Quote Request
+                    </button>
+
+                    <!-- Success Message -->
+                    <div id="success-message" class="hidden mt-6 p-4 bg-emerald-900 border border-emerald-700 text-emerald-200 rounded-2xl text-center">
+                        ✅ Thank you! Your quote request has been sent successfully.<br>
+                        We'll get back to you shortly.
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="error-message" class="hidden mt-6 p-4 bg-red-900 border border-red-700 text-red-200 rounded-2xl text-center">
+                        ❌ Something went wrong. Please try again or call us directly.
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-black py-12 border-t border-zinc-800">
-        <div class="max-w-6xl mx-auto px-6 text-center text-zinc-500 text-sm">
+        <div class="max-w-6xl mx-auto px-6 text-center text-zinc-500">
             <p>© 2026 Junk Bros Trash Removal • Edinboro & Kerrtown, PA</p>
-            <p class="mt-2">Local • Honest • Reliable</p>
+            <p class="mt-2">Local. Honest. Reliable.</p>
         </div>
     </footer>
 
     <script>
-        // Simple form submission alert (you can connect to real backend later)
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert("Thank you! We'll get back to you shortly with a free quote.");
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileBtn.textContent = mobileMenu.classList.contains('hidden') ? '☰' : '✕';
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileBtn.textContent = '☰';
+            });
         });
     </script>
 </body>
-</html>
+</html>      
