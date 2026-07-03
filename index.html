@@ -66,71 +66,71 @@
 
     <!-- Hero, About, Services, Gallery, Testimonials (unchanged) -->
 
-    <!-- Contact Section with Photo Upload -->
-    <section id="contact" class="py-24 bg-zinc-900">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-4">Get Your Free Quote</h2>
-            <p class="text-center text-zinc-400 mb-12">Call, text, email, or fill out the form below. You can attach photos of the junk.</p>
+ <!-- Contact Section -->
+<section id="contact" class="py-24 bg-zinc-900">
+    <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-4">Get Your Free Quote</h2>
+        <p class="text-center text-zinc-400 mb-12">Call, text, email, or fill out the form below. You can attach photos of the junk.</p>
 
-            <div class="grid md:grid-cols-2 gap-10">
-                <!-- Contact Info -->
-                <div class="space-y-8">
-                    <div class="bg-zinc-800 p-8 rounded-3xl">
-                        <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
-                            <i class="fas fa-phone text-red-500"></i> Call or Text
-                        </h3>
-                        <a href="tel:8148078161" class="text-4xl font-bold text-red-500 hover:text-red-400 block">
-                            (814) 807-8161
-                        </a>
-                    </div>
-
-                    <div class="bg-zinc-800 p-8 rounded-3xl">
-                        <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
-                            <i class="fas fa-envelope text-red-500"></i> Email
-                        </h3>
-                        <a href="mailto:junkbrostrash@gmail.com" class="text-xl text-red-500 hover:text-red-400">
-                            junkbrostrash@gmail.com
-                        </a>
-                    </div>
+        <div class="grid md:grid-cols-2 gap-10">
+            <!-- Contact Info -->
+            <div class="space-y-8">
+                <div class="bg-zinc-800 p-8 rounded-3xl">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-phone text-red-500"></i> Call or Text
+                    </h3>
+                    <a href="tel:8148078161" class="text-4xl font-bold text-red-500 hover:text-red-400 block">
+                        (814) 807-8161
+                    </a>
                 </div>
 
-                <!-- Form with Photo Upload -->
-                <form id="quote-form" action="https://formspree.io/f/mqakjzoa" method="POST" enctype="multipart/form-data" class="space-y-6 bg-zinc-800 p-8 rounded-3xl">
-                    <div class="grid grid-cols-2 gap-4">
-                        <input type="text" name="first-name" placeholder="First Name" required 
-                               class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
-                        <input type="text" name="last-name" placeholder="Last Name" required 
-                               class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
-                    </div>
-                    <input type="tel" name="phone" placeholder="Phone Number" required 
-                           class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
-                    <input type="email" name="email" placeholder="Email Address" 
-                           class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
-                    <textarea name="message" rows="4" placeholder="Describe the junk or any special details..." 
-                              class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-5 py-4 focus:outline-none focus:border-red-500"></textarea>
-
-                    <!-- Add Photos -->
-                    <div>
-                        <label class="block text-sm font-medium text-zinc-300 mb-3">Attach Photos (optional)</label>
-                        <input type="file" name="photos" id="photo-upload" accept="image/*" multiple 
-                               class="block w-full text-sm text-zinc-400 file:mr-4 file:py-3 file:px-6 file:rounded-2xl file:border-0 file:text-sm file:font-medium file:bg-red-600 file:text-white hover:file:bg-red-700">
-                        <p class="text-xs text-zinc-500 mt-2">You can select multiple photos of the junk</p>
-                    </div>
-
-                    <button type="submit" 
-                            class="w-full bg-red-600 hover:bg-red-700 py-5 rounded-3xl font-semibold text-lg transition-all">
-                        Send Free Quote Request
-                    </button>
-
-                    <!-- Success Message -->
-                    <div id="success-message" class="hidden mt-6 p-4 bg-emerald-900 border border-emerald-700 text-emerald-200 rounded-2xl text-center">
-                        ✅ Thank you! Your quote request (with photos) has been sent successfully.<br>
-                        We'll get back to you shortly.
-                    </div>
-                </form>
+                <div class="bg-zinc-800 p-8 rounded-3xl">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-envelope text-red-500"></i> Email
+                    </h3>
+                    <a href="mailto:junkbrostrash@gmail.com" class="text-xl text-red-500 hover:text-red-400">
+                        junkbrostrash@gmail.com
+                    </a>
+                </div>
             </div>
+
+            <!-- Form with Photo Upload -->
+            <form id="quote-form" action="https://formspree.io/f/mqakjzoa" method="POST" enctype="multipart/form-data" class="space-y-6 bg-zinc-800 p-8 rounded-3xl">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" name="first-name" placeholder="First Name" required 
+                           class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
+                    <input type="text" name="last-name" placeholder="Last Name" required 
+                           class="bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
+                </div>
+                <input type="tel" name="phone" placeholder="Phone Number" required 
+                       class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
+                <input type="email" name="email" placeholder="Email Address" 
+                       class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-red-500">
+                <textarea name="message" rows="4" placeholder="Describe the junk or any special details..." 
+                          class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-5 py-4 focus:outline-none focus:border-red-500"></textarea>
+
+                <!-- Add Photos -->
+                <div class="pt-2">
+                    <label class="block text-sm font-medium text-zinc-300 mb-3">Attach Photos (optional)</label>
+                    <input type="file" name="photos" accept="image/*" multiple 
+                           class="block w-full text-sm text-zinc-400 file:mr-4 file:py-3 file:px-6 file:rounded-2xl file:border-0 file:text-sm file:font-medium file:bg-red-600 file:text-white hover:file:bg-red-700 cursor-pointer">
+                    <p class="text-xs text-zinc-500 mt-2">You can select multiple photos of the junk</p>
+                </div>
+
+                <button type="submit" 
+                        class="w-full bg-red-600 hover:bg-red-700 py-5 rounded-3xl font-semibold text-lg transition-all">
+                    Send Free Quote Request
+                </button>
+
+                <!-- Success Message -->
+                <div id="success-message" class="hidden mt-6 p-4 bg-emerald-900 border border-emerald-700 text-emerald-200 rounded-2xl text-center">
+                    ✅ Thank you! Your quote request (with photos) has been sent successfully.<br>
+                    We'll get back to you shortly.
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-black py-12 border-t border-zinc-800">
