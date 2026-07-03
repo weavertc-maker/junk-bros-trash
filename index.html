@@ -64,7 +64,7 @@
         </div>
     </nav>
 
-    <!-- Hero, About, Services, Gallery, Testimonials sections remain unchanged -->
+    <!-- Hero, About, Services, Gallery, Testimonials (unchanged) -->
 
     <!-- Contact Section with Photo Upload -->
     <section id="contact" class="py-24 bg-zinc-900">
@@ -109,12 +109,12 @@
                     <textarea name="message" rows="4" placeholder="Describe the junk or any special details..." 
                               class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-5 py-4 focus:outline-none focus:border-red-500"></textarea>
 
-                    <!-- Photo Upload -->
+                    <!-- Add Photos -->
                     <div>
-                        <label class="block text-sm font-medium text-zinc-300 mb-2">Attach Photos (optional)</label>
+                        <label class="block text-sm font-medium text-zinc-300 mb-3">Attach Photos (optional)</label>
                         <input type="file" name="photos" id="photo-upload" accept="image/*" multiple 
-                               class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-white file:mr-4 file:py-2 file:px-6 file:rounded-xl file:border-0 file:text-sm file:font-medium file:bg-red-600 file:text-white hover:file:bg-red-700">
-                        <p class="text-xs text-zinc-500 mt-2">You can select multiple photos</p>
+                               class="block w-full text-sm text-zinc-400 file:mr-4 file:py-3 file:px-6 file:rounded-2xl file:border-0 file:text-sm file:font-medium file:bg-red-600 file:text-white hover:file:bg-red-700">
+                        <p class="text-xs text-zinc-500 mt-2">You can select multiple photos of the junk</p>
                     </div>
 
                     <button type="submit" 
@@ -157,7 +157,7 @@
             });
         });
 
-        // Form with Success Message
+        // Form Success Message
         const form = document.getElementById('quote-form');
         const successMsg = document.getElementById('success-message');
 
@@ -173,9 +173,7 @@
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
 
-                setTimeout(() => {
-                    successMsg.classList.add('hidden');
-                }, 8000);
+                setTimeout(() => successMsg.classList.add('hidden'), 8000);
             }, 800);
         });
     </script>
